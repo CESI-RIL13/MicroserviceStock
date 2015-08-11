@@ -1,7 +1,7 @@
 package microservicestock
 
 class Produit {
-
+    
     Long emplacement
     Long code_barre
     Date date_entree

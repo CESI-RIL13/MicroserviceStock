@@ -1,7 +1,6 @@
 package microservicestock
 
 class Categorie {
-
     String name
 
     static hasMany = [familles:Famille]

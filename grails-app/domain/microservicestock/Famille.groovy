@@ -1,7 +1,6 @@
 package microservicestock
 
 class Famille {
-
     String nom
 
     static belongsTo = [parent:Famille,categorie:Categorie]
