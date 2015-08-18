@@ -1,5 +1,8 @@
 package microservicestock
 
+import grails.rest.*
+
+@Resource(formats=['html','json', 'xml'])
 class Fiche {
 
 	Date date_creation
@@ -21,7 +24,7 @@ class Fiche {
     Integer taille_lot
     Float cout_stockage
 
-    static belongsTo = [fabricant:Fabricant]
+    static hasOne = [famille:Famille,fabricant:Fabricant]
     static hasMany = [produits:Produit]
 
     static constraints = {

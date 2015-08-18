@@ -1,5 +1,7 @@
 package microservicestock
+import grails.rest.*
 
+@Resource(formats=['html','json', 'xml'])
 class Produit {
     
     Long emplacement

@@ -60,8 +60,8 @@ dependencies {
     compile "org.grails.plugins:hibernate"
     compile "org.grails.plugins:cache"
     compile "org.hibernate:hibernate-ehcache"
-    compile "org.grails.plugins:scaffolding"
-    
+
+    runtime "org.grails.plugins:scaffolding"
     runtime "org.grails.plugins:asset-pipeline"
 
     testCompile "org.grails:grails-plugin-testing"

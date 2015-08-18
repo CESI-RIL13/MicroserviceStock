@@ -1,13 +1,16 @@
 package microservicestock
+import grails.rest.*
 
+@Resource(formats=['html','json', 'xml'])
 class Famille {
     String nom
 
-    static belongsTo = [parent:Famille,categorie:Categorie]
-    static hasMany = [enfants:Famille]
+    static hasOne = [categorie:Categorie]
+    static hasMany = [familles:Famille,fiches:Fiche]
+    static belongsTo = [Famille]
 
     static constraints = {
-        enfants nullable: true
-        parent nullable: true
+        familles nullable: true
+        fiches nullable: true
     }
 }
